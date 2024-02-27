@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
-    <title>Document</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -23,7 +23,7 @@
     <div>
         <div>
             {% block content %}
-            <p>Immerse yourself in the rich tapestry of melodies, rhythms, and harmonies. Explore the diverse world of music, from classical symphonies to contemporary beats. Whether you're a seasoned connoisseur or just starting your musical journey, Music Universe is your gateway to the extraordinary realm of sounds and emotions.</p>
+            <p class="para">Immerse yourself in the rich tapestry of melodies, rhythms, and harmonies. Explore the diverse world of music, from classical symphonies to contemporary beats. Whether you're a seasoned connoisseur or just starting your musical journey, Music Universe is your gateway to the extraordinary realm of sounds and emotions.</p>
             {% endblock %}
         </div>
         <img src="{{url_for('static',filename='/image/home.png')}}" alt="home">

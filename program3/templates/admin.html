@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/index.css') }}">
+    <title>Admin Page</title>
+</head>
+<body>
+    <nav>
+        <a href="/">Logout</a>
+    </nav>
+    <div class="content">
+        <h1>Welcome Admin !!</h1>
+    </div>
+    <div class="content">
+        <table>
+            <thead>
+                <tr>
+                    <th>Playlist</th>
+                    <th>Song Name</th>
+                    <th>Move Name</th>
+                    <th>Release Year</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Sample data, you should dynamically generate rows based on your backend logic -->
+                <tr>
+                    <td>My Playlist</td>
+                    <td>Song 1</td>
+                    <td>Move 1</td>
+                    <td>2022</td>
+                </tr>
+                <tr>
+                    <td>Another Playlist</td>
+                    <td>Song 2</td>
+                    <td>Move 2</td>
+                    <td>2021</td>
+                </tr>
+                <!-- Add more rows as needed -->
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
