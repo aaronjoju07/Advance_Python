@@ -58,5 +58,15 @@ def show_submit():
         total_score = (science+Maths+c+data_science)/4
     return  redirect(url_for('show_result',score=total_score))
 
+@app.route('/msg')
+def msg():
+    courses = ["C","C++","Java","Python"]
+    return render_template('index2.html',courses =courses)
+
+
+@app.route('/abt')
+def abt():
+    return render_template('about.html')
+
 if __name__ == '__main__':
     app.run(debug=True,port=8001)

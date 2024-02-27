@@ -1,0 +1,19 @@
+/* styles.css */
+
+.body {
+    background-color: #f0f0f0; /* Set your desired background color */
+    color: #333; /* Set your desired text color */
+    font-family: Arial, sans-serif; /* Set your desired font family */
+    margin: 0; /* Remove default margin */
+    padding: 20px; /* Add padding to the body for better readability */
+  }
+  
+  h1 {
+    color: #0066cc; /* Set a different color for headings if needed */
+  }
+  img {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  

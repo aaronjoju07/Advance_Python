@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='CSS/index.css') }}">
+    <title>Document</title>
+</head>
+
+<body>
+    {% extends "msg.html" %}
+    {% block title %} HomePage {% endblock %}
+    {% block body %}
+    <h2>Welcome to the homepage!</h2>
+    <ul>
+        {% for course in courses %}
+        <li>{{ course }}</li>
+        {% endfor %}
+    </ul>
+    {% endblock %}
+</body>
+
+</html>
