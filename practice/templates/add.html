@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{% block body %}
+    <form method="post" action="{{ url_for('add') }}" onsubmit="return validateForm()">
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="uname" >
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" >
+
+        <button type="submit">Add User</button>
+    </form>
+    <a href="{{ url_for('index') }}">Go back to Home</a>
+
+    <script>
+        function validateForm() {
+            var uname = document.getElementById('uname').value;
+            var contact = document.getElementById('contact').value;
+
+            // Basic validation example: Check if the fields are not empty
+            if (uname.trim() === '' || contact.trim() === '') {
+                alert('Please fill out all fields.');
+                return false;  // Prevent form submission
+            }
+            return true;  // Allow form submission
+        }
+    </script>
+{% endblock %}
