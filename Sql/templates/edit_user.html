@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block body %}
+    <form method="post" action="{{ url_for('update', uid=datas['ID']) }}">
+        <label for="uname">Username:</label>
+        <input type="text" id="uname" name="unmae" value="{{ datas['UNAME'] }}" required>
+
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" name="contact" value="{{ datas['CONTACT'] }}" required>
+
+        <button type="submit">Update User</button>
+    </form>
+
+    <a href="{{ url_for('index') }}">Go back to Home</a>
+{ % endblock %}
