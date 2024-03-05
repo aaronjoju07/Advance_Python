@@ -1,13 +1,176 @@
+
+MCA372-Advanced Python
+Elective
+Upcoming
+Woohoo, no work due soon!
+
+Announce something to your class
+
+Announcement: "Dear Students, kindly mark your…"
+Hubert Shanthan Computer Science
+Created YesterdayYesterday
+Dear Students, kindly mark your presence for the CIA Component exam at 8.15 am (5.3.2024). Kindly bring your laptops; absenteeism is not appreciated. Reporting Time is 8.15 am, and the exam starts at 8.30 am
+
+Add class comment…
+
+
+Announcement: "Dear Students, CIA and ESE details for…"
+Kavitha R Computer Science
+Created Mar 3Mar 3
+Dear Students,
+CIA and ESE details for your reference
+Displaying CIA-ESE-Dates.PNG
+CIA-ESE-Dates.PNG
+
+Add class comment…
+
+Assignment: "DB Creation Practice Exercise"
+Hubert Shanthan Computer Science posted a new assignment: DB Creation Practice Exercise
+Created Mar 1Mar 1
+
+Announcement: "Code for CRUD Operations in Flask"
+Hubert Shanthan Computer Science
+Created Feb 29Feb 29 (Edited Feb 29)
+Code for CRUD Operations in Flask
+
+add_user.html
+HTML
+
+app.py
+Text
+
+db.py
+Text
+
+edit_user.html
+HTML
+
+index.html
+HTML
+
+layout.html
+HTML
+
+Flask Python.pptx
+PowerPoint
+
+Add class comment…
+
+Assignment: "Lab 3"
+Hubert Shanthan Computer Science posted a new assignment: Lab 3
+Created Feb 27Feb 27 (Edited Feb 27)
+
+Announcement: "Dear Students, Good Evening As informed…"
+Kavitha R Computer Science
+Created Feb 25Feb 25
+Dear Students,
+Good Evening
+
+As informed in the class CIA's are scheduled as follows. Prepare well for your exam. Absenteeism will not be entertained. 
+
+CIA-Component1(MCQ)- 28 Feb 2024(Wednesday 11-12)
+     
+CIA-Component2(Lab Test-1)- 5 Mar 2024(Tuesday 8.30AM-11AM)
+        Portion- Unit1, Unit2
+Regards
+
+Add class comment…
+
+Material: "Course Plan"
+Kavitha R Computer Science posted a new material: Course Plan
+Created Feb 25Feb 25
+Material: "Setting up Flask in VS Code"
+Hubert Shanthan Computer Science posted a new material: Setting up Flask in VS Code
+Created Feb 21Feb 21
+Assignment: "P2:GeoPanda"
+Kavitha R Computer Science posted a new assignment: P2:GeoPanda
+Created Feb 20Feb 20 (Edited Feb 20)
+Material: "GoePanda"
+Kavitha R Computer Science posted a new material: GoePanda
+Created Feb 19Feb 19
+
+Announcement: "Dear Students, Install the…"
+Kavitha R Computer Science
+Created Feb 18Feb 18
+Dear Students,
+Install the below-mentioned packages and download the attached file for tomorrow's class
+
+geopandas, rasterio, contextily,
+
+SnowGIS.zip
+Compressed Archive
+1 class comment
+
+VISESH AGARWAL 2347164Feb 19
+https://kgis.ksrsac.in/kgis/downloads.aspx
+
+Add class comment…
+
+Material: "Base map"
+Kavitha R Computer Science posted a new material: Base map
+Created Feb 15Feb 15
+Assignment: "P1:3-D Plot"
+Kavitha R Computer Science posted a new assignment: P1:3-D Plot
+Created Feb 13Feb 13 (Edited Feb 25)
+Material: "Package Installation"
+Kavitha R Computer Science posted a new material: Package Installation
+Created Feb 12Feb 12
+Material: "IrisDataset"
+Kavitha R Computer Science posted a new material: IrisDataset
+Created Feb 7Feb 7
+
+Announcement: "Pyhon sample code usin irks"
+Hubert Shanthan Computer Science
+Created Feb 6Feb 6
+Pyhon sample code usin irks
+
+irissam.py
+Text
+
+Add class comment…
+
+Assignment: "Recall your Python Learning:"
+Kavitha R Computer Science posted a new assignment: Recall your Python Learning:
+Created Feb 6Feb 6 (Edited Feb 6)
+
+Announcement: "Python Sample Code"
+Hubert Shanthan Computer Science
+Created Feb 5Feb 5
+Python Sample Code
+
+plotlibsample.py
+Text
+
+Add class comment…
+
+
+Announcement: "Python Libraries"
+Hubert Shanthan Computer Science
+Created Feb 5Feb 5
+Python Libraries
+
+Python Library.pptx
+PowerPoint
+
+Add class comment…
+
 {% extends 'layout.html' %}
 {% block body %}
-<form method="post" action="{{ url_for('add') }}">
-    <label for="uname">Username:</label>
-    <input type="text" id="uname" name="uname" required>
-
-    <label for="contact">Contact:</label>
-    <input type="text" id="contact" name="contact" required>
-
-    <button type="submit">Add User</button>
-</form>
-<a href="{{ url_for('index') }}">Go back to Home</a>
+  <div class='row'>
+    <div class='col-5 mx-auto'>
+      <h3>Add user</h3><hr>
+      <form method='post' action='{{url_for("add_user")}}'>
+        <div class='form-group'>
+          <label>User Name</label>
+          <input type='text' name='uname' required class='form-control'>
+        </div>
+        <div class='form-group'>
+          <label>Contact</label>
+          <input type='text' name='contact' required class='form-control'>
+        </div>
+        <input type='submit' value='Submit' class='btn btn-primary'>
+      </form>
+    
+    </div>
+  </div>
 {% endblock %}
