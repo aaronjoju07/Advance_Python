@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="display: flex;align-items: center;justify-content: center;flex-direction: column;">
+  <h1>Inventory Management</h1>
+    <h2>login</h2>
+    <div>
+        <div style="padding: 2rem; background-color: antiquewhite; border-radius: 2rem; width: 50vh; display: flex;justify-content: center; align-items: center;" >
+          <form style="display: flex;justify-content: center; align-items: center;flex-direction: column;" method='post' action='{{url_for("login")}}'>
+            <div class='form-group'>
+              <label>User Name</label>
+              <input style="padding: 0.4rem; border: 0; border-radius: 0.31rem;" type='text' name='uname' required'>
+            </div>
+            <div style="margin: 0.7rem;">
+              <label>Password   </label>
+              <input style="padding: 0.4rem; border: 0; border-radius: 0.31rem;" type='password' name='password' required >
+            </div>
+            <input style="padding: 0.8rem; border: 0; border-radius: 0.31rem;" type='submit' value='Submit' class=''>
+          </form>
+        
+        </div>
+      </div>
+</body>
+</html>

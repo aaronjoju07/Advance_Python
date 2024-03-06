@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+{% block body %}
+  <div class='row'>
+    <div class='col-5 mx-auto'>
+
+      <form method='post' action='{{url_for("add_inventory")}}' onsubmit="return validateForm()">
+        <div class='form-group'>
+          <label>Item Name</label>
+          <input type='text' name='name' required class='form-control'>
+        </div>
+        <div class='form-group'>
+          <label>Count</label>
+          <input type='text' name='count' required class='form-control' id='countInput'>
+        </div>
+        <input type='submit' value='Submit' class='btn btn-primary'>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      var countInput = document.getElementById('countInput');
+      var countValue = parseInt(countInput.value);
+
+      if (isNaN(countValue) || countValue <= 0) {
+        alert('Count must be a positive number greater than 0.');
+        return false;
+      }
+
+      return true;
+    }
+  </script>
+{% endblock %}
