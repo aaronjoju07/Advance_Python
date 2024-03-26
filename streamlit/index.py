@@ -28,7 +28,7 @@ st.write(df)
 # Plot data if selected
 if choice != 'All data':
     st.write("### Visualization")
-    fig, axes = plt.subplots(1, 2, figsize=(12, 6))  # Create subplots with 1 row and 2 columns
+    fig, axes = plt.subplots(1, 2, figsize=(12, 6)) 
     if choice == 'Sepal':
         axes[0].scatter(df['SepalLengthCm'], df['SepalWidthCm'],
                         c=pd.factorize(df['Species'])[0], cmap='viridis')
