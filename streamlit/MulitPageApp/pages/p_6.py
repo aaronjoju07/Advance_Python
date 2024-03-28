@@ -1,7 +1,9 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
-
+st.set_page_config(page_title="MultiPageApp")
+st.sidebar.success("Select any page from here")
+# st.set_page_config(page_title="MultiPageApp")
 
 # Set color codes
 primary_color = '#FA7070'
@@ -38,7 +40,7 @@ st.markdown(
 # Load sample data
 @st.cache_data
 def load_data():
-    data = pd.read_csv('shopping_trends.csv')
+    data = pd.read_csv('/Users/aaronjoju/Documents/Advance_Python/streamlit/shopping_trends.csv')
     return data
 
 data = load_data()
